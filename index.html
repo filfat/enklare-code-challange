@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Enklare FAQ</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!--
+            Techincally just 1 library,
+            Let me know if you'd like me to do this in VanilaJS.
+            However presonally I would've never done this in completely VanilaJS
+        -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="http://codetest.enklare.se/img/enklare-logotype.png" />
+        </header>
+        <main>
+            <input type="search" placeholder="Skriv din sökning här">
+            <img class="search-loader" src="http://codetest.enklare.se/img/spinner-1s-30px.gif" />
+
+            <div class="result-options">
+                <div class="description">Välj max antal träffar i resultatlistan:</div>
+                <div class="options">
+                    <span>3 st</span>
+                    <span>5 st</span>
+                    <span class="selected">20 st</span>
+                </div>
+            </div>
+            <div class="results">
+                <article>
+                    <div class="search-title">Hittade <span class="n-hits"></span> träffar för sökingen <span class="search-string"></span></div>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>
