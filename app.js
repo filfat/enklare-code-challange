@@ -19,7 +19,6 @@ let getArticles = (query) => {
     let max_res = parseInt($('.result-options .options .selected').text().replace(/\D/g,''));
 
     $.getJSON("http://codetest.enklare.se/api/search?q=" + query, (res) => {
-        let reg = new RegExp('/(' + query + ')/gi', 'g');
         for (let n = 0; n < res.length && n < max_res; n++)
             $('main .results').append(`
                 <article id="article-${res[n].id}">
